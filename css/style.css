@@ -1,8 +1,13 @@
+:root {
+    --primaryFontColor: #464646;
+}
+
 *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
     background-color: #f5f5f5;
+    color: var(--primaryFontColor);
 }
 
 body{
@@ -22,6 +27,7 @@ a{
     display: flex;
     justify-content: space-between;
     padding: 32px 0;   
+    color: var(--primaryFontColor);
 }
 
 .container-menu .logo{
@@ -43,21 +49,65 @@ a{
 }
 
 .container-menu .menu ul li{
-    margin-left: 32px;   
+    margin-left: 32px;  
+    font-weight: 500;
+}
+
+.container-menu .menu ul li a {
+    color: var(--primaryFontColor);
 }
 
 .container-menu .menu ul li:nth-child(1){
     margin-left: 0px;
 }
 
-/* CONTAINER BUFFER */
+/* CONTAINER BANNER */
 
-.container-buffer .info {
+.container-banner {
     display: flex;
-    margin-left: 82px;
+    margin-top: 32px;
+    margin-bottom: 32px;
     justify-content: space-between;
-    padding: 32px 0; 
+    align-items: center;
+}
+
+.container-banner .info {
+    width: 751px;
+}
+
+.container-banner .info h2 {
+    font-weight: bold;
+    font-size: 52px;
+}
+
+.container-banner .info p {
+    font-size: 22px;
+    margin: 22px 0;
+}
+
+.container-banner .info .redes ul {
+    display: flex;
+    list-style: none;
+}
+
+.container-banner .info .redes ul li {
+    margin-right: 32px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.container-banner .info .redes ul li a i{
+    margin-left: 4px;
+    transform: rotate(-45deg);
 }
 
 
+/* Imagen del banner */
 
+
+.container-banner .imagen img {
+    width: 368px;
+    height: 368px;
+    object-fit: cover;
+    border-radius: 50%;
+}
